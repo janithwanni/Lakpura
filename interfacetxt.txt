@@ -1,0 +1,34 @@
+1advance
+2client
+3employee
+4epf
+5etf
+6grn
+7invoice
+8meals
+9officer
+10officer payroll
+11payroll
+12shift
+13supplier
+14uniform
+15user profiles
+~
+16issue service letters
+17issue sending employees to point letters
+
+//\\
+//real time data entry.. entering data at the moment it happened
+
+1employer
+2officer
+3payroll->employee,officer
+4dedcutions->advance,meals,give uniforms,epf,etf,punishment
+5get uniforms->add supplier,get uniforms
+6invoice
+7enter monthly shift
+8manage users
+9issue letters
+10logout
+
+
