@@ -38,6 +38,7 @@ public class MainWindow extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
         employeeicon = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         employeetxt = new javax.swing.JLabel();
         employeetxt1 = new javax.swing.JLabel();
         employeetxt2 = new javax.swing.JLabel();
@@ -76,6 +77,10 @@ public class MainWindow extends javax.swing.JFrame {
         employeeicon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/bitmap.png"))); // NOI18N
         employeeicon.setToolTipText("");
         jPanel1.add(employeeicon, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, -1));
+
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/doc.png"))); // NOI18N
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(904, 410, 190, -1));
 
         employeetxt.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         employeetxt.setForeground(new java.awt.Color(255, 255, 255));
@@ -277,6 +282,7 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel payrollbg;
