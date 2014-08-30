@@ -206,7 +206,7 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel3.setText(df2.format(d));
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 90, 320, -1));
 
-        bglabel.setIcon(new javax.swing.ImageIcon("C:\\Users\\JanithWanniWin8\\Desktop\\PhotshopProjects\\Multicolor_gaussian_blur_gradient_2560x1600.jpg")); // NOI18N
+        bglabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/wood-background.png"))); // NOI18N
         jPanel1.add(bglabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jScrollPane1.setViewportView(jPanel1);
