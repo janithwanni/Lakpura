@@ -109,7 +109,7 @@ public class MainWindow extends javax.swing.JFrame {
 
         employeetxt5.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         employeetxt5.setForeground(new java.awt.Color(255, 255, 255));
-        employeetxt5.setText("Add Uniforms");
+        employeetxt5.setText("Get Uniforms");
         jPanel1.add(employeetxt5, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 300, 160, 80));
 
         employeetxt6.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
@@ -206,7 +206,7 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel3.setText(df2.format(d));
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 90, 320, -1));
 
-        bglabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/wood-background.png"))); // NOI18N
+        bglabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/Multicolor_gaussian_blur_gradient_2560x1600.jpg"))); // NOI18N
         jPanel1.add(bglabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jScrollPane1.setViewportView(jPanel1);
