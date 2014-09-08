@@ -20,15 +20,15 @@
 //\\
 //real time data entry.. entering data at the moment it happened
 
-1employer
-2officer
-3payroll->employee,officer
-4dedcutions->advance,meals,give uniforms,epf,etf,punishment
-5get uniforms->add supplier,get uniforms
-6invoice
-7enter monthly shift
-8manage users
-9issue letters
+1employer -> janith
+2officer -> kalpana
+3payroll->employee -> janith,officer -> kalpana
+4dedcutions->advance -> heshan,meals ->heshan,give uniforms->janith,epf->kalpana,etf->heshan,punishment->heshan
+5get uniforms->add supplier->kalpana,get uniforms -> heshan
+6invoice -> janith
+7enter monthly shift -> kalpana
+8manage users -> heshan
+9issue letters -> janith
 10logout
 
 
