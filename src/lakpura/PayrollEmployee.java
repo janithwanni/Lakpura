@@ -48,11 +48,44 @@ public class PayrollEmployee extends javax.swing.JFrame {
         jTextField4 = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         jTextField5 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        jTextField7 = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        jTextField8 = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jTextField9 = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        jTextField10 = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        jTextField11 = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        jTextField12 = new javax.swing.JTextField();
+        jLabel14 = new javax.swing.JLabel();
+        jTextField13 = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        jTextField14 = new javax.swing.JTextField();
+        jLabel16 = new javax.swing.JLabel();
+        jTextField15 = new javax.swing.JTextField();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jTextField16 = new javax.swing.JTextField();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jLabel20 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("Payroll for Employee");
-        jLabel1.setBounds(760, 40, 210, 40);
+        jLabel1.setBounds(510, 30, 210, 40);
         jLayeredPane1.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel2.setText("Payroll ID");
@@ -60,15 +93,15 @@ public class PayrollEmployee extends javax.swing.JFrame {
         jLayeredPane1.add(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jTextField1.setEditable(false);
-        jTextField1.setBounds(170, 100, 160, 28);
+        jTextField1.setBounds(180, 100, 160, 28);
         jLayeredPane1.add(jTextField1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel3.setText("Month");
-        jLabel3.setBounds(380, 100, 46, 30);
+        jLabel3.setBounds(510, 90, 46, 30);
         jLayeredPane1.add(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jMonthChooser1.setBounds(450, 100, 133, 30);
+        jMonthChooser1.setBounds(620, 90, 120, 30);
         jLayeredPane1.add(jMonthChooser1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jYearChooser1.setBounds(600, 100, 90, 28);
+        jYearChooser1.setBounds(950, 100, 110, 28);
         jLayeredPane1.add(jYearChooser1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel4.setText("Employee ID");
@@ -79,8 +112,8 @@ public class PayrollEmployee extends javax.swing.JFrame {
         jTextField2.setBounds(200, 210, 160, 28);
         jLayeredPane1.add(jTextField2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jButton1.setText("Select Employee");
-        jButton1.setBounds(390, 210, 140, 30);
+        jButton1.setText("Calculate Overtime");
+        jButton1.setBounds(390, 470, 140, 30);
         jLayeredPane1.add(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel5.setText("Employee Name");
@@ -104,6 +137,134 @@ public class PayrollEmployee extends javax.swing.JFrame {
         jLayeredPane1.add(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jTextField5.setBounds(200, 350, 160, 28);
         jLayeredPane1.add(jTextField5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jTextField6.setBounds(200, 390, 160, 28);
+        jLayeredPane1.add(jTextField6, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel8.setText("Incentive");
+        jLabel8.setBounds(70, 390, 120, 30);
+        jLayeredPane1.add(jLabel8, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jTextField7.setBounds(200, 430, 160, 28);
+        jLayeredPane1.add(jTextField7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel9.setText("Cost Of Living");
+        jLabel9.setBounds(70, 430, 120, 30);
+        jLayeredPane1.add(jLabel9, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jTextField8.setEditable(false);
+        jTextField8.setBounds(200, 470, 160, 28);
+        jLayeredPane1.add(jTextField8, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel10.setText("Overtime");
+        jLabel10.setBounds(70, 470, 120, 30);
+        jLayeredPane1.add(jLabel10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jButton2.setText("Select Employee");
+        jButton2.setBounds(390, 210, 140, 30);
+        jLayeredPane1.add(jButton2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jTextField9.setEditable(false);
+        jTextField9.setBounds(800, 210, 160, 28);
+        jLayeredPane1.add(jTextField9, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel11.setText("Advance ");
+        jLabel11.setBounds(670, 210, 100, 30);
+        jLayeredPane1.add(jLabel11, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jTextField10.setEditable(false);
+        jTextField10.setBounds(800, 250, 160, 28);
+        jLayeredPane1.add(jTextField10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel12.setText("Meals");
+        jLabel12.setBounds(670, 330, 100, 30);
+        jLayeredPane1.add(jLabel12, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jTextField11.setEditable(false);
+        jTextField11.setBounds(800, 290, 160, 28);
+        jLayeredPane1.add(jTextField11, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel13.setText("Uniforms");
+        jLabel13.setBounds(670, 290, 100, 30);
+        jLayeredPane1.add(jLabel13, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jTextField12.setEditable(false);
+        jTextField12.setBounds(800, 330, 160, 28);
+        jLayeredPane1.add(jTextField12, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel14.setText("EPF");
+        jLabel14.setBounds(670, 250, 100, 30);
+        jLayeredPane1.add(jLabel14, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jTextField13.setEditable(false);
+        jTextField13.setBounds(800, 370, 160, 28);
+        jLayeredPane1.add(jTextField13, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel15.setText("Distress Fund");
+        jLabel15.setBounds(670, 410, 100, 30);
+        jLayeredPane1.add(jLabel15, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jTextField14.setEditable(false);
+        jTextField14.setBounds(800, 410, 160, 28);
+        jLayeredPane1.add(jTextField14, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel16.setText("Punishment");
+        jLabel16.setBounds(670, 370, 100, 30);
+        jLayeredPane1.add(jLabel16, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jTextField15.setEditable(false);
+        jTextField15.setBounds(700, 560, 160, 28);
+        jLayeredPane1.add(jTextField15, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel17.setText("Total Deductions");
+        jLabel17.setBounds(670, 450, 120, 30);
+        jLayeredPane1.add(jLabel17, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel18.setBorder(javax.swing.BorderFactory.createTitledBorder("Deductions"));
+        jLabel18.setBounds(630, 180, 400, 350);
+        jLayeredPane1.add(jLabel18, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel19.setText("Net Salary");
+        jLabel19.setBounds(610, 550, 100, 40);
+        jLayeredPane1.add(jLabel19, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jTextField16.setEditable(false);
+        jTextField16.setBounds(800, 450, 160, 28);
+        jLayeredPane1.add(jTextField16, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jButton3.setText("Browse");
+        jButton3.setBounds(180, 140, 130, 28);
+        jLayeredPane1.add(jButton3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jButton4.setText("Save");
+        jButton4.setBounds(120, 630, 130, 40);
+        jLayeredPane1.add(jButton4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jButton5.setText("Preview");
+        jButton5.setBounds(290, 630, 140, 40);
+        jLayeredPane1.add(jButton5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jButton6.setText("Print");
+        jButton6.setBounds(460, 630, 150, 40);
+        jLayeredPane1.add(jButton6, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jButton7.setText("Clear");
+        jButton7.setBounds(1000, 630, 130, 40);
+        jLayeredPane1.add(jButton7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jButton8.setText("Delete");
+        jButton8.setBounds(830, 630, 150, 40);
+        jLayeredPane1.add(jButton8, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jButton10.setText("Cancel");
+        jButton10.setBounds(1140, 630, 130, 40);
+        jLayeredPane1.add(jButton10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jButton11.setText("Update");
+        jButton11.setBounds(680, 630, 130, 40);
+        jLayeredPane1.add(jButton11, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel20.setText("Year");
+        jLabel20.setBounds(870, 98, 50, 30);
+        jLayeredPane1.add(jLabel20, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -159,22 +320,55 @@ public class PayrollEmployee extends javax.swing.JFrame {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JLayeredPane jLayeredPane1;
     private com.toedter.calendar.JMonthChooser jMonthChooser1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
+    private javax.swing.JTextField jTextField13;
+    private javax.swing.JTextField jTextField14;
+    private javax.swing.JTextField jTextField15;
+    private javax.swing.JTextField jTextField16;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
     private com.toedter.calendar.JYearChooser jYearChooser1;
     // End of variables declaration//GEN-END:variables
 }

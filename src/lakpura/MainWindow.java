@@ -4,10 +4,14 @@
  */
 package lakpura;
 
+import java.awt.Toolkit;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JComboBox;
+import javax.swing.UIManager;
 
 /**
  *
@@ -22,7 +26,8 @@ public class MainWindow extends javax.swing.JFrame {
         initComponents();
         System.out.println(getLocation().getX() + "   " + getLocation().getY());
         setBounds(0, 0, 1364, 726);
-        
+        setExtendedState(MAXIMIZED_BOTH);
+        setIconImage(Toolkit.getDefaultToolkit().getImage(""));
         //setLocation(0, 24);
     }
 
@@ -35,10 +40,10 @@ public class MainWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        bglabel = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
         employeeicon = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         employeetxt = new javax.swing.JLabel();
         employeetxt1 = new javax.swing.JLabel();
         employeetxt2 = new javax.swing.JLabel();
@@ -49,22 +54,21 @@ public class MainWindow extends javax.swing.JFrame {
         employeetxt7 = new javax.swing.JLabel();
         employeetxt8 = new javax.swing.JLabel();
         employeetxt9 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        payrollbg = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        employeebg = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        deductionsbg = new javax.swing.JLabel();
-        uniformbg = new javax.swing.JLabel();
-        invoicebg = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        bglabel = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+
+        bglabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/Multicolor_gaussian_blur_gradient_2560x1600.jpg"))); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1359, 740));
@@ -74,121 +78,54 @@ public class MainWindow extends javax.swing.JFrame {
         jPanel1.setPreferredSize(getPreferredSize());
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        employeeicon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/bitmap.png"))); // NOI18N
+        employeeicon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        employeeicon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/handy.png"))); // NOI18N
         employeeicon.setToolTipText("");
-        jPanel1.add(employeeicon, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, -1));
-
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/doc.png"))); // NOI18N
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(904, 410, 190, -1));
+        jPanel1.add(employeeicon, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 198, 160, 320));
 
         employeetxt.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
-        employeetxt.setForeground(new java.awt.Color(255, 255, 255));
         employeetxt.setText("Enter Shifts");
-        jPanel1.add(employeetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 510, 140, 80));
+        jPanel1.add(employeetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 510, 180, 80));
 
         employeetxt1.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
-        employeetxt1.setForeground(new java.awt.Color(255, 255, 255));
         employeetxt1.setText("Deductions");
-        jPanel1.add(employeetxt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 510, 140, 80));
+        jPanel1.add(employeetxt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 510, 180, 80));
 
         employeetxt2.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
-        employeetxt2.setForeground(new java.awt.Color(255, 255, 255));
         employeetxt2.setText("Invoice");
-        jPanel1.add(employeetxt2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 300, 140, 80));
+        jPanel1.add(employeetxt2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 300, 170, 80));
 
         employeetxt3.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
-        employeetxt3.setForeground(new java.awt.Color(255, 255, 255));
         employeetxt3.setText("Employees");
-        jPanel1.add(employeetxt3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 500, 140, 80));
+        jPanel1.add(employeetxt3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 500, 140, 80));
 
         employeetxt4.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
-        employeetxt4.setForeground(new java.awt.Color(255, 255, 255));
         employeetxt4.setText("Payroll");
-        jPanel1.add(employeetxt4, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 510, 140, 80));
+        jPanel1.add(employeetxt4, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 510, 170, 80));
 
         employeetxt5.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
-        employeetxt5.setForeground(new java.awt.Color(255, 255, 255));
         employeetxt5.setText("Get Uniforms");
-        jPanel1.add(employeetxt5, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 300, 160, 80));
+        jPanel1.add(employeetxt5, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 300, 180, 80));
 
         employeetxt6.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
-        employeetxt6.setForeground(new java.awt.Color(255, 255, 255));
         employeetxt6.setText("Issue Letters");
-        jPanel1.add(employeetxt6, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 510, 150, 80));
+        jPanel1.add(employeetxt6, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 510, 170, 80));
 
         employeetxt7.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
-        employeetxt7.setForeground(new java.awt.Color(255, 255, 255));
         employeetxt7.setText("Manage User");
-        jPanel1.add(employeetxt7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 300, 160, 80));
+        jPanel1.add(employeetxt7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 300, 170, 80));
 
         employeetxt8.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
-        employeetxt8.setForeground(new java.awt.Color(255, 255, 255));
         employeetxt8.setText("Exit");
-        jPanel1.add(employeetxt8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 510, 140, 80));
+        jPanel1.add(employeetxt8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 510, 160, 80));
 
         employeetxt9.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
-        employeetxt9.setForeground(new java.awt.Color(255, 255, 255));
         employeetxt9.setText("Officer");
-        jPanel1.add(employeetxt9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, 140, 80));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/logout.png"))); // NOI18N
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 430, -1, -1));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/officer.png"))); // NOI18N
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 190, 160, 120));
-
-        payrollbg.setBackground(new java.awt.Color(102, 102, 102));
-        payrollbg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/btn200x400#2.png"))); // NOI18N
-        payrollbg.setSize(200,400);
-        jPanel1.add(payrollbg, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 190, -1, -1));
+        jPanel1.add(employeetxt9, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 300, 190, 80));
 
         jLabel1.setFont(new java.awt.Font("Ubuntu", 0, 64)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Welcome !");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 20, 470, 120));
-
-        employeebg.setBackground(new java.awt.Color(102, 102, 102));
-        employeebg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/btn200x400#2.png"))); // NOI18N
-        payrollbg.setSize(200,400);
-        jPanel1.add(employeebg, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, -1, -1));
-
-        jLabel5.setBackground(new java.awt.Color(102, 102, 102));
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/btn200x190#2.png"))); // NOI18N
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 190, -1, -1));
-
-        deductionsbg.setBackground(new java.awt.Color(102, 102, 102));
-        deductionsbg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/btn200x190#2.png"))); // NOI18N
-        jPanel1.add(deductionsbg, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 190, -1, -1));
-
-        uniformbg.setBackground(new java.awt.Color(102, 102, 102));
-        uniformbg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/btn200x190#2.png"))); // NOI18N
-        jPanel1.add(uniformbg, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 400, -1, -1));
-
-        invoicebg.setBackground(new java.awt.Color(102, 102, 102));
-        invoicebg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/btn200x190#2.png"))); // NOI18N
-        jPanel1.add(invoicebg, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 400, -1, -1));
-
-        jLabel10.setBackground(new java.awt.Color(102, 102, 102));
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/btn200x190#2.png"))); // NOI18N
-        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel10MouseClicked(evt);
-            }
-        });
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 400, -1, -1));
-
-        jLabel18.setBackground(new java.awt.Color(102, 102, 102));
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/btn200x190#2.png"))); // NOI18N
-        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 190, -1, -1));
-
-        jLabel21.setBackground(new java.awt.Color(102, 102, 102));
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/btn200x190#2.png"))); // NOI18N
-        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 190, -1, -1));
-
-        jLabel22.setBackground(new java.awt.Color(102, 102, 102));
-        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/btn200x190#2.png"))); // NOI18N
-        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 400, -1, -1));
 
         //DateFormat df = new SimpleDateFormat("HH:mm");
         Date d = new Date();
@@ -206,8 +143,45 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel3.setText(df2.format(d));
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 90, 320, -1));
 
-        bglabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/Multicolor_gaussian_blur_gradient_2560x1600.jpg"))); // NOI18N
-        jPanel1.add(bglabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/buttonfinal200x400.png"))); // NOI18N
+        jButton1.setContentAreaFilled(false);
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 190, -1, -1));
+
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/buttonfinal200x400.png"))); // NOI18N
+        jButton2.setContentAreaFilled(false);
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, -1, -1));
+
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/buttonfinal200x200#2.png"))); // NOI18N
+        jButton4.setContentAreaFilled(false);
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 190, -1, -1));
+
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/buttonfinal200x200#2.png"))); // NOI18N
+        jButton5.setContentAreaFilled(false);
+        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 400, -1, -1));
+
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/buttonfinal200x200#2.png"))); // NOI18N
+        jButton6.setContentAreaFilled(false);
+        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 400, -1, -1));
+
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/buttonfinal200x200#2.png"))); // NOI18N
+        jButton7.setContentAreaFilled(false);
+        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 190, -1, -1));
+
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/buttonfinal200x200#2.png"))); // NOI18N
+        jButton8.setContentAreaFilled(false);
+        jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 190, -1, -1));
+
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/buttonfinal200x200#2.png"))); // NOI18N
+        jButton9.setContentAreaFilled(false);
+        jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 190, -1, -1));
+
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/buttonfinal200x200#2.png"))); // NOI18N
+        jButton10.setContentAreaFilled(false);
+        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 400, -1, -1));
+
+        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/buttonfinal200x200#2.png"))); // NOI18N
+        jButton11.setContentAreaFilled(false);
+        jPanel1.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 400, -1, -1));
 
         jScrollPane1.setViewportView(jPanel1);
 
@@ -215,12 +189,6 @@ public class MainWindow extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
-        
-        //exit button
-        System.exit(0);
-    }//GEN-LAST:event_jLabel10MouseClicked
 
     /**
      * @param args the command line arguments
@@ -232,12 +200,7 @@ public class MainWindow extends javax.swing.JFrame {
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
+            UIManager.setLookAndFeel("com.jtattoo.plaf.texture.TextureLookAndFeel");
         } catch (ClassNotFoundException ex) {
             java.util.logging.Logger.getLogger(MainWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
@@ -258,8 +221,6 @@ public class MainWindow extends javax.swing.JFrame {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel bglabel;
-    private javax.swing.JLabel deductionsbg;
-    private javax.swing.JLabel employeebg;
     private javax.swing.JLabel employeeicon;
     private javax.swing.JLabel employeetxt;
     private javax.swing.JLabel employeetxt1;
@@ -271,21 +232,20 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JLabel employeetxt7;
     private javax.swing.JLabel employeetxt8;
     private javax.swing.JLabel employeetxt9;
-    private javax.swing.JLabel invoicebg;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel payrollbg;
-    private javax.swing.JLabel uniformbg;
     // End of variables declaration//GEN-END:variables
 }

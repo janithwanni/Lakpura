@@ -2,6 +2,8 @@ payroll employee
 employee
 get uniforms
 invoice
+deductions -uniforms
+
 
 kalpana
 officer
@@ -13,3 +15,15 @@ heshan
 advance 
 manage users
 meals
+
+1employer -> janith
+2officer -> kalpana
+3payroll->employee -> janith,officer -> kalpana
+4dedcutions->advance -> heshan,meals ->heshan,give uniforms->janith,epf->kalpana,etf->heshan,punishment->heshan
+5get uniforms->add supplier->kalpana,get uniforms -> heshan
+6invoice -> janith
+7enter monthly shift -> kalpana
+8manage users -> heshan
+9issue letters -> janith
+10logout
+

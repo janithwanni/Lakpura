@@ -4,6 +4,9 @@
  */
 package lakpura;
 
+import java.awt.Toolkit;
+import javax.swing.UIManager;
+
 /**
  *
  * @author janithwanni
@@ -16,6 +19,8 @@ public class Employee extends javax.swing.JFrame {
     public Employee() {
         initComponents();
         setBounds(0, 0, 1364, 726);
+        setExtendedState(MAXIMIZED_BOTH);
+        setIconImage(Toolkit.getDefaultToolkit().getImage(""));
     }
 
     /**
@@ -45,8 +50,6 @@ public class Employee extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jButton2 = new javax.swing.JButton();
@@ -87,7 +90,6 @@ public class Employee extends javax.swing.JFrame {
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         jTextField21 = new javax.swing.JTextField();
-        jButton6 = new javax.swing.JButton();
         jCheckBox1 = new javax.swing.JCheckBox();
         jLabel21 = new javax.swing.JLabel();
         jTextField22 = new javax.swing.JTextField();
@@ -159,23 +161,13 @@ public class Employee extends javax.swing.JFrame {
         jLabel14.setBounds(50, 680, 100, 18);
         jLayeredPane1.add(jLabel14, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel15.setText("Profile Photo");
-        jLabel15.setBounds(700, 520, 110, 18);
-        jLayeredPane1.add(jLabel15, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        jLabel16.setText("jLabel16");
-        jLabel16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jLabel16.setBounds(870, 520, 260, 270);
-        jLayeredPane1.add(jLabel16, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
         jButton1.setText("Browse");
         jButton1.setBounds(360, 70, 120, 40);
         jLayeredPane1.add(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jSeparator1.setBackground(new java.awt.Color(134, 125, 125));
         jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        jSeparator1.setBorder(null);
-        jSeparator1.setBounds(650, 90, 10, 840);
+        jSeparator1.setBounds(590, 90, 10, 840);
         jLayeredPane1.add(jSeparator1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jButton2.setText("Update");
@@ -237,7 +229,6 @@ public class Employee extends javax.swing.JFrame {
         jSpinner1.setBounds(180, 680, 130, 28);
         jLayeredPane1.add(jSpinner1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox1.setBounds(180, 640, 160, 28);
         jLayeredPane1.add(jComboBox1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDateChooser1.setBounds(180, 560, 190, 28);
@@ -293,12 +284,8 @@ public class Employee extends javax.swing.JFrame {
         jTextField21.setBounds(180, 760, 190, 28);
         jLayeredPane1.add(jTextField21, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jButton6.setText("Browse");
-        jButton6.setBounds(880, 810, 120, 40);
-        jLayeredPane1.add(jButton6, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
         jCheckBox1.setText("Married");
-        jCheckBox1.setBounds(680, 70, 77, 21);
+        jCheckBox1.setBounds(680, 70, 110, 21);
         jLayeredPane1.add(jCheckBox1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLabel21.setText("Spouse Name");
@@ -363,12 +350,13 @@ public class Employee extends javax.swing.JFrame {
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+            UIManager.setLookAndFeel("com.jtattoo.plaf.texture.TextureLookAndFeel");
         } catch (ClassNotFoundException ex) {
             java.util.logging.Logger.getLogger(Employee.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
@@ -394,7 +382,6 @@ public class Employee extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JComboBox jComboBox1;
     private com.toedter.calendar.JDateChooser jDateChooser1;
@@ -405,8 +392,6 @@ public class Employee extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
