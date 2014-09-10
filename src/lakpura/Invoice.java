@@ -4,6 +4,9 @@
  */
 package lakpura;
 
+import java.awt.Toolkit;
+import javax.swing.UIManager;
+
 /**
  *
  * @author janithwanni
@@ -16,6 +19,8 @@ public class Invoice extends javax.swing.JFrame {
     public Invoice() {
         initComponents();
         setBounds(0, 0, 1364, 726);
+        setExtendedState(MAXIMIZED_BOTH);
+        setIconImage(Toolkit.getDefaultToolkit().getImage(""));
     }
 
     /**
@@ -44,6 +49,15 @@ public class Invoice extends javax.swing.JFrame {
         jTextField5 = new javax.swing.JTextField();
         jTextField6 = new javax.swing.JTextField();
         jTextField7 = new javax.swing.JTextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -56,6 +70,11 @@ public class Invoice extends javax.swing.JFrame {
         jLayeredPane1.add(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jTextField1.setEditable(false);
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
         jTextField1.setBounds(150, 70, 180, 28);
         jLayeredPane1.add(jTextField1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -96,12 +115,61 @@ public class Invoice extends javax.swing.JFrame {
         jLayeredPane1.add(jTextField5, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jTextField6.setEditable(false);
+        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField6ActionPerformed(evt);
+            }
+        });
         jTextField6.setBounds(190, 160, 180, 28);
         jLayeredPane1.add(jTextField6, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jTextField7.setEditable(false);
         jTextField7.setBounds(190, 340, 180, 28);
         jLayeredPane1.add(jTextField7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
+            },
+            new String [] {
+                "Rank", "Strength", "12 hour shifts   ", "Total Shifts", "Rate", "Total"
+            }
+        ));
+        jScrollPane2.setViewportView(jTable1);
+
+        jScrollPane2.setBounds(90, 460, 1190, 220);
+        jLayeredPane1.add(jScrollPane2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jButton4.setText("Save");
+        jButton4.setBounds(90, 720, 130, 40);
+        jLayeredPane1.add(jButton4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jButton5.setText("Preview");
+        jButton5.setBounds(260, 720, 140, 40);
+        jLayeredPane1.add(jButton5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jButton6.setText("Print");
+        jButton6.setBounds(430, 720, 150, 40);
+        jLayeredPane1.add(jButton6, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jButton11.setText("Update");
+        jButton11.setBounds(650, 720, 130, 40);
+        jLayeredPane1.add(jButton11, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jButton8.setText("Delete");
+        jButton8.setBounds(800, 720, 150, 40);
+        jLayeredPane1.add(jButton8, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jButton7.setText("Clear");
+        jButton7.setBounds(970, 720, 130, 40);
+        jLayeredPane1.add(jButton7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jButton10.setText("Cancel");
+        jButton10.setBounds(1110, 720, 130, 40);
+        jLayeredPane1.add(jButton10, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -111,7 +179,7 @@ public class Invoice extends javax.swing.JFrame {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 724, Short.MAX_VALUE)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 793, Short.MAX_VALUE)
         );
 
         jScrollPane1.setViewportView(jPanel1);
@@ -120,6 +188,14 @@ public class Invoice extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -131,12 +207,13 @@ public class Invoice extends javax.swing.JFrame {
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+            UIManager.setLookAndFeel("com.jtattoo.plaf.texture.TextureLookAndFeel");
         } catch (ClassNotFoundException ex) {
             java.util.logging.Logger.getLogger(Invoice.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
@@ -157,6 +234,13 @@ public class Invoice extends javax.swing.JFrame {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -166,6 +250,8 @@ public class Invoice extends javax.swing.JFrame {
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;

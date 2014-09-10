@@ -4,8 +4,10 @@
  */
 package lakpura;
 
+import java.awt.Toolkit;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import javax.swing.UIManager;
 
 /**
  *
@@ -19,6 +21,8 @@ public class PayrollEmployee extends javax.swing.JFrame {
     public PayrollEmployee() {
         initComponents();
         setBounds(0, 0, 1364, 726);
+        setExtendedState(MAXIMIZED_BOTH);
+        setIconImage(Toolkit.getDefaultToolkit().getImage(""));
     }
 
     /**
@@ -294,12 +298,13 @@ public class PayrollEmployee extends javax.swing.JFrame {
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+            UIManager.setLookAndFeel("com.jtattoo.plaf.texture.TextureLookAndFeel");
         } catch (ClassNotFoundException ex) {
             java.util.logging.Logger.getLogger(PayrollEmployee.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {

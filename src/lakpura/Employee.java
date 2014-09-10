@@ -213,12 +213,12 @@ public class Employee extends javax.swing.JFrame {
 
         buttonGroup1.add(jRadioButton1);
         jRadioButton1.setText("Male");
-        jRadioButton1.setBounds(170, 440, 57, 21);
+        jRadioButton1.setBounds(170, 440, 80, 21);
         jLayeredPane1.add(jRadioButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setText("Female");
-        jRadioButton2.setBounds(310, 440, 74, 21);
+        jRadioButton2.setBounds(310, 440, 110, 21);
         jLayeredPane1.add(jRadioButton2, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jTextField10.setBounds(180, 800, 190, 28);
         jLayeredPane1.add(jTextField10, javax.swing.JLayeredPane.DEFAULT_LAYER);

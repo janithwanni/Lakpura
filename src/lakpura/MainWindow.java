@@ -57,6 +57,15 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -81,11 +90,11 @@ public class MainWindow extends javax.swing.JFrame {
         employeeicon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         employeeicon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/handy.png"))); // NOI18N
         employeeicon.setToolTipText("");
-        jPanel1.add(employeeicon, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 198, 160, 320));
+        jPanel1.add(employeeicon, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 140, 140));
 
         employeetxt.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
-        employeetxt.setText("Enter Shifts");
-        jPanel1.add(employeetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 510, 180, 80));
+        employeetxt.setText("Register Shifts");
+        jPanel1.add(employeetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 510, 180, 80));
 
         employeetxt1.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         employeetxt1.setText("Deductions");
@@ -104,20 +113,20 @@ public class MainWindow extends javax.swing.JFrame {
         jPanel1.add(employeetxt4, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 510, 170, 80));
 
         employeetxt5.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
-        employeetxt5.setText("Get Uniforms");
-        jPanel1.add(employeetxt5, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 300, 180, 80));
+        employeetxt5.setText("Buy Uniforms");
+        jPanel1.add(employeetxt5, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 300, 200, 80));
 
         employeetxt6.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         employeetxt6.setText("Issue Letters");
-        jPanel1.add(employeetxt6, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 510, 170, 80));
+        jPanel1.add(employeetxt6, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 510, 170, 80));
 
         employeetxt7.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         employeetxt7.setText("Manage User");
         jPanel1.add(employeetxt7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 300, 170, 80));
 
         employeetxt8.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
-        employeetxt8.setText("Exit");
-        jPanel1.add(employeetxt8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 510, 160, 80));
+        employeetxt8.setText("Manage Clients");
+        jPanel1.add(employeetxt8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 510, 180, 80));
 
         employeetxt9.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         employeetxt9.setText("Officer");
@@ -143,12 +152,45 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel3.setText(df2.format(d));
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 90, 320, -1));
 
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/businessman99.png"))); // NOI18N
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 430, 110, 90));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/personal23.png"))); // NOI18N
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 250, -1, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/football114.png"))); // NOI18N
+        jLabel6.setToolTipText("");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 240, -1, -1));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/invoice1 (1).png"))); // NOI18N
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 330, -1, -1));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/Very-Basic-Document-icon.png"))); // NOI18N
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 450, -1, -1));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/dollar120.png"))); // NOI18N
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 450, -1, -1));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/business60.png"))); // NOI18N
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 240, -1, -1));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/business116.png"))); // NOI18N
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 450, -1, -1));
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/dollar91.png"))); // NOI18N
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 240, -1, 60));
+
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/buttonfinal200x400.png"))); // NOI18N
         jButton1.setContentAreaFilled(false);
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 190, -1, -1));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/buttonfinal200x400.png"))); // NOI18N
         jButton2.setContentAreaFilled(false);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, -1, -1));
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/buttonfinal200x200#2.png"))); // NOI18N
@@ -169,10 +211,20 @@ public class MainWindow extends javax.swing.JFrame {
 
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/buttonfinal200x200#2.png"))); // NOI18N
         jButton8.setContentAreaFilled(false);
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 190, -1, -1));
 
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/buttonfinal200x200#2.png"))); // NOI18N
         jButton9.setContentAreaFilled(false);
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 190, -1, -1));
 
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/buttonfinal200x200#2.png"))); // NOI18N
@@ -189,6 +241,24 @@ public class MainWindow extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+       
+        //employee
+        new Employee().setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        
+        //officer
+        
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+       
+        //invoice
+        new Invoice().setVisible(true); 
+    }//GEN-LAST:event_jButton9ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -243,8 +313,17 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables

@@ -3,7 +3,7 @@ employee
 get uniforms
 invoice
 deductions -uniforms
-
+issue letters
 
 kalpana
 officer
@@ -12,11 +12,12 @@ uniforms-addsupplier
 deduction-epf,etf
 
 heshan 
-advance 
+deductions-advance,meals 
 manage users
-meals
+punsihment
+monthly shift
 
-1employer -> janith
+1employee -> janith
 2officer -> kalpana
 3payroll->employee -> janith,officer -> kalpana
 4dedcutions->advance -> heshan,meals ->heshan,give uniforms->janith,epf->kalpana,etf->heshan,punishment->heshan
