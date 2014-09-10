@@ -199,6 +199,11 @@ public class MainWindow extends javax.swing.JFrame {
 
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/buttonfinal200x200#2.png"))); // NOI18N
         jButton5.setContentAreaFilled(false);
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 400, -1, -1));
 
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backgroundPics/buttonfinal200x200#2.png"))); // NOI18N
@@ -257,8 +262,14 @@ public class MainWindow extends javax.swing.JFrame {
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
        
         //invoice
-        new Invoice().setVisible(true); 
+        //new Invoice().setVisible(true); 
     }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        
+        //issue 
+        new issueLetters().setVisible(true);
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
